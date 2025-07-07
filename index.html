@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Echton Signatures - Fresh food and groceries for your daily needs.">
+  <meta name="description"
+    content="Buy fresh raw and frozen foods online. Door-to-door delivery. Order rice, beans, yam, pepper, garri and more at Echton Signatures.">
+  <meta name="keywords"
+    content="fresh food Nigeria, raw food delivery, grocery online, yam, garri, rice, beans, pepper, frozen chicken, Echton Signatures">
+  <meta name="keywords"
+    content="grocery store, fresh food, local groceries, echton signatures, nearby grocery, online food store">
+  <meta name="google-site-verification" content="JiZ5ISzC1OpBQt7AdXoakMIKZ89_vy0fE7HwrhUBUDI" />
+
+  <title>Echton Signatures - Grocery Store</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./logo2-removebg-preview.png" alt="Echton Logo" height="40" /> <span class="text-danger"></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="#Home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+              <li><a class="dropdown-item" href="#raw-foods">Raw Foods</a></li>
+              <li><a class="dropdown-item" href="#frozen-foods">Frozen Foods</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-2"><a class="btn btn-primary" href="#About">Read More</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="Home">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left -->
+        <div class="col-md-6">
+          <small>- QUALITY FOODSTUFFS, FAST DELIVERY</small>
+          <h1><span id="typed"></span></h1>
+          <p>Your trusted grocery store for fresh, affordable, and timely food delivery.</p>
+          <div class="hero-buttons d-flex flex-wrap">
+            <a href="#" class="btn btn-danger">Ask Questions</a>
+            <a href="#" class="btn btn-outline-light text-white">See how it works</a>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="col-md-6 text-center mt-4 mt-md-0">
+          <img src="./9b011bc0-1eb3-402d-b9b0-421e96fe6daf-removebg-preview.png" class="img-fluid"
+            alt="Grocery Visual" />
+        </div>
+      </div>
+
+      <!-- Logos -->
+      <div class="logos mt-5">
+        <p>Trusted for fresh delivery of foodstuffs</p>
+        <span>Rice</span><span>Beans</span><span>Yam</span><span>Meat</span><span>Oil</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    new Typed('#typed', {
+      strings: ['Shop Smarter with Echton Signatures'],
+      typeSpeed: 45,
+      backSpeed: 0,
+      showCursor: true,
+      cursorChar: '|',
+      loop: false
+    });
+  </script>
+
+
+<section class="comfort-delivery-section fade-in">
+  <div class="container text-center py-5">
+    <h2 class="mb-3" style="color: rgb(255, 38, 0); font-weight: 700;">
+      Why Stress the Market?
+    </h2>
+    <p style="font-size: 1.15rem; max-width: 700px; margin: 0 auto; color: #444;">
+      Why stress yourself going to the market to get local foodstuffs when <strong style="color: rgb(255, 51, 0);">Echton Signature</strong> delivers them to your doorstep — fresh, fast, and at an affordable price?
+    </p>
+  </div>
+</section>
+
+<style>
+  .comfort-delivery-section {
+    background: linear-gradient(to right, #fff7e6, #ffe3d2);
+    border-top: 5px solid rgb(255, 38, 0);
+    border-bottom: 5px solid rgb(255, 38, 0);
+  }
+
+  @media (max-width: 768px) {
+    .comfort-delivery-section h2 {
+      font-size: 1.75rem;
+    }
+    .comfort-delivery-section p {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const deliverySection = document.querySelector('.comfort-delivery-section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          deliverySection.classList.add('visible');
+          observer.unobserve(deliverySection);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    observer.observe(deliverySection);
+  });
+</script>
+
+  <section class="all-items-section" id="Products">
+    <h2 class="text-center">Echton General Foodstuffs</h2>
+    <p>Echton Signature delivers raw food items and local Nigerian foodstuffs straight to your doorstep — fresh, fast, and reliable.</p>
+    <p class="text-center text-muted">
+      We deal in a variety of general foodstuffs — raw, fresh, and frozen items.<br>
+      <strong>Note:</strong> Clicking "Add to cart" will redirect you to our WhatsApp. We offer fast door-to-door delivery
+      within your area.
+    </p>
+
+
+    <!-- 🥬 Raw Foods -->
+    <h3 id="raw-foods">Raw Foods</h3>
+    <div class="row">
+      <!-- Rice -->
+      <div class="col-md-4 mb-4">
+        <div class="item-card">
+         
+          <img src="./2c97b7bf-f6ab-49e9-b324-e60951f52c49.jpg" alt="Organic Natural Bananas">
+          <h4>Echton<br>Rice</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <a href="https://wa.me/2348032054545" class="add-to-cart-btn" target="_blank">
+            <i class="fas fa-shopping-cart"></i> Add to cart
+          </a>
+        </div>
+      </div>
+
+      <!-- Beans -->
+      <div class="col-md-4 mb-4">
+        <div class="item-card">
+          
+          <img src="./Southern Black Eyed Peas Recipe (Hoppin' John….jpg" alt="Beans">
+          <h4>Echton<br>Beans</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <a href="https://wa.me/2348032054545" class="add-to-cart-btn" target="_blank">
+            <i class="fas fa-shopping-cart"></i> Add to cart
+          </a>
+        </div>
+      </div>
+
+      <!-- Irish Potato -->
+      <div class="col-md-4 mb-4">
+        <div class="item-card">
+        
+          <img src="./28590556-b125-4955-8306-e5944e9faf88.jpg" alt="Irish Potato">
+          <h4>Echton<br>Irish Potato</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <a href="https://wa.me/2348032054545" class="add-to-cart-btn" target="_blank">
+            <i class="fas fa-shopping-cart"></i> Add to cart
+          </a>
+        </div>
+      </div>
+
+      <!-- Yam -->
+      <div class="col-md-4 mb-4">
+        <div class="item-card">
+       
+          <img src="./This is a bundle comprising of 3 tubers of yam….jpg" alt="Yam">
+          <h4>Echton<br>Yam</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <a href="https://wa.me/2348032054545" class="add-to-cart-btn" target="_blank">
+            <i class="fas fa-shopping-cart"></i> Add to cart
+          </a>
+        </div>
+      </div>
+
+      <!-- Fresh Pepper -->
+      <div class="col-md-4 mb-4">
+        <div class="item-card">
+         
+          <img src="./images-2020-10-12T133626.274.jpeg" alt="Fresh Pepper">
+          <h4>Echton<br>Fresh Pepper</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <a href="https://wa.me/2348032054545" class="add-to-cart-btn" target="_blank">
+            <i class="fas fa-shopping-cart"></i> Add to cart
+          </a>
+        </div>
+      </div>
+
+      <!-- Garri -->
+      <div class="col-md-4 mb-4">
+        <div class="item-card">
+         
+          <img src="./10b802a5-1f44-4765-8117-903076a5a321.jpg" alt="Garri">
+          <h4>Echton<br>Garri (cassava flakes)</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <a href="https://wa.me/2348032054545" class="add-to-cart-btn" target="_blank">
+            <i class="fas fa-shopping-cart"></i> Add to cart
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ❄️ Frozen Foods -->
+    <h3 id="frozen-foods" class="text-center mb-4">Frozen Foods</h3>
+    <div class="row justify-content-center">
+
+      <!-- Frozen Fish -->
+      <div class="col-md-4 mb-4">
+        <div class="item-card">
+       
+          <img src="./cdc3bedb-d1b0-4db4-992c-932529c86310.jpg" alt="Frozen Fish">
+          <h4>Echton<br>Frozen Fish</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <a href="https://wa.me/2348032054545" class="add-to-cart-btn" target="_blank">
+            <i class="fas fa-shopping-cart"></i> Add to cart
+          </a>
+        </div>
+      </div>
+
+      <!-- Frozen Chicken -->
+      <div class="col-md-4 mb-4">
+        <div class="item-card">
+          
+          <img src="./38b8eec4-266a-4c50-8444-f79901960c44.jpg" alt="Frozen Chicken">
+          <h4>Echton<br>Frozen Chicken</h4>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <a href="https://wa.me/2348032054545" class="add-to-cart-btn" target="_blank">
+            <i class="fas fa-shopping-cart"></i> Add to cart
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+  </section>
+
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // animate only once
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.item-card').forEach(card => {
+      observer.observe(card);
+    });
+
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dropdown = document.querySelector('.dropdown');
+
+      if (window.innerWidth >= 992) {
+        dropdown.addEventListener('mouseover', function () {
+          const dropdownToggle = this.querySelector('[data-bs-toggle="dropdown"]');
+          const dropdownInstance = bootstrap.Dropdown.getOrCreateInstance(dropdownToggle);
+          dropdownInstance.show();
+        });
+
+        dropdown.addEventListener('mouseleave', function () {
+          const dropdownToggle = this.querySelector('[data-bs-toggle="dropdown"]');
+          const dropdownInstance = bootstrap.Dropdown.getOrCreateInstance(dropdownToggle);
+          dropdownInstance.hide();
+        });
+      }
+    });
+  </script>
+
+  <section class="about-wrapper" id="About">
+    <div class="about-card">
+      <div class="about-image">
+        <img src="./download (6).jpeg"
+          alt="Echton groceries">
+      </div>
+      <div class="about-content">
+        <h1>About Us</h1>
+        <p>
+          Echton Signature is your trusted neighborhood grocery store, proudly serving a wide range of general food
+          items and authentic Nigerian foodstuffs. From grains, spices, and cooking essentials to raw and local
+          ingredients like garri, yam, ogbono, crayfish, palm oil, and more – we bring the market to your doorstep.
+        </p>
+        <a href="#" class="learn-more-btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const aboutCard = document.querySelector(".about-card");
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.3 });
+
+        observer.observe(aboutCard);
+      } else {
+        // Fallback for unsupported browsers
+        aboutCard.classList.add("show");
+      }
+    });
+  </script>
+
+
+  <section class="contact-section" id="Contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p><i class="fas fa-phone-alt"></i> +234 803 205 4545</p>
+        <p><i class="fab fa-whatsapp"></i> +234 903 593 3006</p>
+      </div>
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4664.231501883006!2d7.321523289147934!3d8.966668665909815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e71be9f0c8e13%3A0x9e8203a70da699a6!2sJedo%20Mass%20Housing%20Estate!5e0!3m2!1sen!2sng!4v1748519414817!5m2!1sen!2sng"
+          width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+ <section class="blog-section" id="Blog">
+  <h2 class="blog-title">Local Food Tips & Guides</h2>
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Blog Card 1 -->
+      <div class="col-md-6 col-lg-4 fade-in">
+        <div class="card blog-card">
+          <img src="./Ogbono Soup.jpeg" class="card-img-top" alt="Ogbono Storage">
+          <div class="card-body blog-card-body">
+            <h5 class="card-title blog-card-title">How to Store Ogbono & Egusi Without Losing Taste</h5>
+            <p class="card-text blog-card-text">Learn the best ways to preserve ogbono and egusi for months — no insects, no loss of flavor.</p>
+            <a href="blog1.html" class="read-more-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="col-md-6 col-lg-4 fade-in">
+        <div class="card blog-card">
+          <img src="./Butter Beans vs_ Lima Beans_ Here’s the Difference.jpeg" class="card-img-top" alt="Washing Beans">
+          <div class="card-body blog-card-body">
+            <h5 class="card-title blog-card-title">Fastest Way to Wash and Store Nigerian Beans</h5>
+            <p class="card-text blog-card-text">Reduce cooking time and avoid weevils with this simple pre-wash and drying technique for storing beans.</p>
+            <a href="blog2.html" class="read-more-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="col-md-6 col-lg-4 fade-in">
+        <div class="card blog-card">
+          <img src="./Best Healthy Ketchup Recipe with No Sugar.jpeg" class="card-img-top" alt="Blending Pepper">
+          <div class="card-body blog-card-body">
+            <h5 class="card-title blog-card-title">Blending & Preserving Tomatoes, Tatashe & Pepper</h5>
+            <p class="card-text blog-card-text">No freezer burns! Discover how to blend and store your tomato mix to last up to a month — with flavor intact.</p>
+            <a href="blog3.html" class="read-more-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <script>
+    // Fade-in on scroll using Intersection Observer
+    document.addEventListener('DOMContentLoaded', () => {
+      const faders = document.querySelectorAll('.fade-in');
+
+      const options = {
+        threshold: 0.3
+      };
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            obs.unobserve(entry.target); // animate only once
+          }
+        });
+      }, options);
+
+      faders.forEach(fadeEl => observer.observe(fadeEl));
+    });
+
+  </script>
+
+
+
+
+  <footer class="bg-dark text-white text-center py-4 footer">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 <span class="text-pink">Echton Signature</span>. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
